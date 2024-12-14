@@ -1,68 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Project</title>
+  <script src="index.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div>
-        <p>
-            <button onclick="
-            numb = 1;
-            console.log(`${numb}`);">1</button>
-            <button onclick="
-            numb =2;
-            console.log(`${numb}`);">2</button>
-            <button onclick="
-            numb =3;
-            console.log(`${numb}`);">3</button>
-        </p>
-        <P>
-            <button onclick="
-            numb =4;
-            console.log(`${numb}`);">4</button>
-            <button onclick="
-            numb =5;
-            console.log(`${numb}`);">5</button>
-            <button onclick="
-            numb =6;
-            console.log(`${numb}`);">6</button>
-        </P>
-        <p>
-            <button onclick="
-            numb =7;
-            console.log(`${numb}`);">7</button>
-            <button onclick="
-            numb =8;
-            console.log(`${numb}`);">8</button>
-            <button onclick="
-            numb =9;
-            console.log(`${numb}`);">9</button>
-        </p>
-        <p>
-            <button onclick="
-            numb = 0;
-            console.log(`${numb}`);">0</button>
-            <button onclick="
-            opt = '+';
-            console.log(`${opt}`); ";>+</button>
-            <button onclick="
-            opt = '-'; 
-            console.log(`${opt}`);";>-</button>
-        </p>
-        <p>
-            <button>*</button>
-            <button>/</button>
-            <button>=</button>
-        </p>
+  <div class="outer-container">
+    <header>
+      <h2>CASIO</h2>
+      <div class="solar-panel"></div>
+    </header>
+
+    <div class="screen screen-properties"></div>
+
+    <div class="btn-wrapper">
+      <div class="btn-container-left">
+        <button type="button" data-action="percent" id="percent" data>%</button>
+        <button type="button" data-action="plus-minus" id="negative">+/-</button>
+        <button type="button" data-action="clear" class="red-btn" id="clear">C</button>
+        <button type="button" data-action="all-clear" class="red-btn" id="allClear">AC</button>
+      </div>
+      <div class="btn-container-main">
+        <button type="button" data-number="7" class='main'>7</button>
+        <button type="button" data-number="8" class='main'>8</button>
+        <button type="button" data-number="9" class='main'>9</button>
+        <button type="button" data-number="4" class='main'>4</button>
+        <button type="button" data-number="5" class='main'>5</button>
+        <button type="button" data-number="6" class='main'>6</button>
+        <button type="button" data-number="1" class='main'>1</button>
+        <button type="button" data-number="2" class='main'>2</button>
+        <button type="button" data-number="3" class='main'>3</button>
+        <button type="button" data-number="0" class='main'>0</button>
+        <button type="button" data-action="decimal" id="decimal" class='main'>.</button>
+        <button type="button" data-action="equals" class='main'>=</button>
+      </div>
+      <div class="btn-container-right">
+        <button type="button" data-action="backspace" id="arrow">&#x25c0</button>
+        <button type="button" data-action="multiply" class="operate" id="x">x</button>
+        <button type="button" data-action="divide" class="operate" id="/">&divide;</button>
+        <button type="button" data-action="subtract" class="operate" id="-">-</button>
+        <button type="button" data-action="add"  class="operate"id="+">+</button>
+      </div>
     </div>
-
-    <script>
-        let numb = 0;
-        let opt = "";
-
-
-    </script>
+    <footer></footer>
+    </div>
 </body>
 </html>
